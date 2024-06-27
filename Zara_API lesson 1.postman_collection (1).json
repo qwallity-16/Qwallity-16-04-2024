@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "565ba896-0aac-46ac-8f65-6edb2785826f",
+		"name": "API lesson 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36152641"
+	},
+	"item": [
+		{
+			"name": "register user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\"first_name\": \"Armine\",\r\n\"email\": \"fdncjden.djhn\",\r\n\"username\": \"arm235\",\r\n\"password\": \"1234567\",\r\n\"role_id\": 2,\r\n\"account\": 100\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qwallity-dev.onrender.com/register/api",
+					"protocol": "https",
+					"host": [
+						"qwallity-dev",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"register",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all advanced courses",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qwallity-dev.onrender.com/courses/advanced/api",
+					"protocol": "https",
+					"host": [
+						"qwallity-dev",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"courses",
+						"advanced",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user role",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "1234567",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "arm235",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\"role_id\": \"1\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qwallity-dev.onrender.com/user_role/arm235",
+					"protocol": "https",
+					"host": [
+						"qwallity-dev",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"user_role",
+						"arm235"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
