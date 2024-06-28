@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#KAN-60] system accept information with invalid data</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://qwallitymanual16042024.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [KAN-60]&nbsp;<a href="https://qwallitymanual16042024.atlassian.net/browse/KAN-60">system accept information with invalid data</a>
+            <span class="subText">
+               Created: 09/May/24                   &nbsp;Updated: 09/May/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://qwallitymanual16042024.atlassian.net/secure/BrowseProject.jspa?id=10000">Qwallity</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:78a6ab76-4ee4-4ee8-9104-7dcbf039c48a"
+                id="word_reporter_712020:78a6ab76-4ee4-4ee8-9104-7dcbf039c48a"
+                href="https://qwallitymanual16042024.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A78a6ab76-4ee4-4ee8-9104-7dcbf039c48a">
+                    Zara Khachatryan
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:78a6ab76-4ee4-4ee8-9104-7dcbf039c48a"
+                id="word_assignee_712020:78a6ab76-4ee4-4ee8-9104-7dcbf039c48a"
+                href="https://qwallitymanual16042024.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A78a6ab76-4ee4-4ee8-9104-7dcbf039c48a">
+                    Zara Khachatryan
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10071-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Dev                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://qwallitymanual16042024.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    Screenshot 2024-05-09 191553.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Blocks</b><br/>
+                            </td>
+                        </tr>
+                                    <tr>
+            <td>
+                blocks
+            </td>
+            <td>
+                <a href="https://qwallitymanual16042024.atlassian.net/browse/KAN-46">
+                     KAN-46                 </a>
+            </td>
+            <td>
+                Zaruhi Khachatryan
+            </td>
+            <td>
+                To Do
+            </td>
+        </tr>
+                                                                    </table>
+            </td>
+        </tr>
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10071-value" class="value" bgcolor="#ffffff" width="80%">      0|i000cv:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Steps to reproduce:</b></td>
+                <td id="customfield_10038-10071-value" class="value" bgcolor="#ffffff" width="80%">      <ol>
+	<li>Open Qwallity page <a href="https://qwallity-dev.onrender.com/" class="external-link" rel="nofollow noreferrer">https://qwallity-dev.onrender.com/</a></li>
+	<li>Log in / qwallitymanual16042024@gmail.com/ pass: qwallitymanual16042024#</li>
+	<li>log in with user / Zara/ pass:12345678</li>
+	<li>Go to exercises /in the middle on top of the screen/</li>
+	<li>choose Black box</li>
+	<li>in "name " field fill in invalid data /2222/</li>
+	<li>enter data in "address" field</li>
+	<li>fill in "phone" field with invalid data/hfkkkoko/</li>
+	<li>press check</li>
+</ol>
+
+
+
+<p><b>Actual result:</b> system accepts data and "information is correct " validation message is seen<br/>
+<b>Expected result</b>:system should not accept data and invalid data message should be seen: "name" field can contain only letters<br/>
+"phone" field should only contain numbers</p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Severity:</b></td>
+                <td id="customfield_10039-10071-value" class="value" bgcolor="#ffffff" width="80%">    Critical
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Priority:</b></td>
+                <td id="customfield_10040-10071-value" class="value" bgcolor="#ffffff" width="80%">    High
+</td>
+            </tr>
+            </table>
+
+
+Generated at Fri Jun 28 12:48:40 UTC 2024 by Zara Khachatryan using Jira 1001.0.0-SNAPSHOT#100257-rev:6c1e913e6ce19d7c01b203a23fa42db6c4d39af3.
+
+</body>
+</html>
