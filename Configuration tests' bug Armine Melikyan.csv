@@ -1,239 +1,726 @@
-﻿Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Labels,Description,Environment,Watchers,Watchers,Watchers Id,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Duplicate),Outward issue link (Duplicate),Inward issue link (Relates),Outward issue link (Relates),Custom field (Actual end),Custom field (Actual start),Custom field (Attachments),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Development),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Estimation),Custom field (Estimation),Custom field (Impact),Custom field (Issue color),Custom field (Locked forms),Custom field (Open forms),Custom field (Priority),Custom field (Project overview key),Custom field (Project overview status),Custom field (QA Engineer),Custom field (QA Engineer)Id,Custom field (Rank),Custom field (References ),Custom field (Request Type),Custom field (Severity),Custom field (Start date),Custom field (Steps to reproduce),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Total forms),Custom field (Vulnerability),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Comment,Status Category,Status Category Changed
-"Price field's Config ""true"" doesn't work in Edit page",KAN-113,10127,Bug,To Do,KAN,Qwallity,software,QWALLITY Manual,712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf,,Medium,,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,27/Jun/24 10:42 PM,27/Jun/24 10:52 PM,27/Jun/24 11:27 PM,,,0,Prod,,,Armine Melikyan,,637128983e79f12e571e8d29,,,,,,,,,,,KAN-111,,,,,,,,,,,,,,,,,,,Medium,,,Armine Melikyan,637128983e79f12e571e8d29,0|i000ob:,,,Medium,,"1.Login Config. Data Prod.
+Bug Report 
 
-Email - [configurationdata@gmail.com|mailto:configurationdata@gmail.com]
-Pass - Configuration_0101 
+ID number
+#1
+automatically getting in bug tracking system
+Bug Summary
+In Config set “Credit card” payment method but on Qwallity app are “Credit card” and “Cash”
 
-In Config. Data Prod. of Adding course required fields are
-""title"":true, change  ""true""
-""price"": true, change ""true""
-""description"": true change  ""false""
 
-3.Click Save on Config Data Prod
-and check that the functionality required *of the fields works
+Reporter
+Armine Melikyan
 
-4.Open Qwallity app prod log in as Admin userusername: admin_userpassword: 11111111
 
-5.Click on *Courses* button
+Submit Date
+25/07/2024
 
-6.Select *Advanced* courses
 
-7.From list open ""[Cours_adv_4|https://qwallity-prod.onrender.com/courses/course/36]""
+Platform
+Web page
 
-8.Click *Edit* On Qwallity app Price and Description fields leave empty and
-9.Click on *Submit* button
 
-*Expected result-*On Qwallity app price field should be required *
-The course edit shouldn't be Submitted 
-Description field shouldn't be required field
+Operating System
+Windows
 
-*Actual result*-There is no Price field",,,,,,,,,,,,To Do,27/Jun/24 10:42 PM
-"In Edit page Config ""true"" for Title and Price doesn't work",KAN-112,10126,Bug,To Do,KAN,Qwallity,software,QWALLITY Manual,712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf,,Medium,,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,27/Jun/24 10:28 PM,27/Jun/24 10:39 PM,27/Jun/24 10:34 PM,,,0,Prod,,,Armine Melikyan,,637128983e79f12e571e8d29,,,,,,,,,,,,KAN-96,,,,,,,,,,,,,,,,,,Medium,,,Armine Melikyan,637128983e79f12e571e8d29,0|i000o3:,,,Medium,,"# Login Config. Data Prod.
 
-Email - [configurationdata@gmail.com|mailto:configurationdata@gmail.com]
-Pass - Configuration_0101 
+Browser
+Google Chrome
 
-2.Open Qwallity app prod [https://qwallity-prod.onrender.com|https://qwallity-prod.onrender.com/user_action]
 
-log in as *Admin user*
+Severity
+High
 
- userusername: admin_userpassword: 11111111
 
-3.In Config. Data Prod. of Adding course required fields 
-""title"":true, change  ""true""
-""price"": true, change ""false""
-""description"": true change  ""true""
+Priority
+Medium
 
-4.Click *Save* on Config Data Prod
-and check that the functionality *required* * of the fields works
 
-5.On Qwallity app Click *Courses*
+Status
+Medium
+automatically getting ‘Open’ in bug tracking system
+Assigned to 
+QA/Developer/BA
 
-6.Select *Advanced courses*
 
-7.From *opened* list click on ""[Cours_adv_4|https://qwallity-prod.onrender.com/courses/course/36]""
+Version
+Version 124.0.6367.60 (Official Build) (64-bit)
 
- 8.*Title* and *Description* fields *leave* empty and
-9.Click on *Submit* button
 
-title-Cours_adv_4
-price- 12
-description-test course for workshop_tem2222
+Environment
+ dev, uat    
 
-*Expected result*-On Qwallity app price field shouldn't be required *
-                          The course *edit* shouldn't be *Submitted*
 
-*Actual result*- The system allows to *submit* *edited*  course with empty *Title* and *Description* fields",,,,,,,,,,,,To Do,27/Jun/24 10:28 PM
-"In Edit page Price field ""true"" Config doesn't work correctly",KAN-111,10125,Bug,To Do,KAN,Qwallity,software,QWALLITY Manual,712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf,,Medium,,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,27/Jun/24 10:11 PM,27/Jun/24 10:42 PM,27/Jun/24 10:46 PM,,,0,Prod,,,Armine Melikyan,,637128983e79f12e571e8d29,,,,,,,,,,KAN-113,,KAN-96,,,,,,,,,,,,,,,,,,Medium,,,Armine Melikyan,637128983e79f12e571e8d29,0|i000nv:,,,Medium,,"1. Login Config. Data Prod.
+Component/tag
+Reset
+
+
+Screenshot/video
+
+
+
+
+
+
+Precondition: 
+1.Open Config application - https://www.npoint.io/
+
+2. Login with following credentials
 
 Email - configurationdata@gmail.com
-Pass - Configuration_0101 
+Pass - Configuration_0101
 
-2.Open Qwallity app prod [https://qwallity-prod.onrender.com|https://qwallity-prod.onrender.com/user_action]
+3. Open Qwallity app prod.
+(Email - qwallitymanual16042024@gmail.com, Code- qwallity16042024# )
 
-log in as *Admin user*
+4.Login as non admin user Qwallity prod
 
- userusername: admin_userpassword: 11111111
+            username: amelikyan
+            pass: arminemelikyan123
 
-3.Compare with Config. Data Prod (e. g.
-""title"":true,
-""price"": true,
-""description"": true)
+https://qwallity-prod.onrender.com
 
-4.On Qwallity app click on Courses button
 
-5.Select *Advanced* courses
 
-6.From *opened* list click on ""[Cours_adv_4|https://qwallity-prod.onrender.com/courses/course/36]""
+Steps to reproduce
+Step1  Open  and read Config Data Prod Payment type -  ", "Credit 
+Step2   Open Qwallity app and click user_action butt
+Step3   Click on Payment type  drown down menu
+Step4   Compare Config Data Prod. with Qwallity app Payment type
+Expected result - In Payment type drop down menu should be "Credit card" payment type
 
-7.Click on *Edit* button
+Actual result -  In Payment type drop down menu there are "Cash" and "Credit card" payment 
+                             type.  According to the Config Data Prod there shouldn't be "Cash" payment type 
+                             as it is not mentioned in Config Data Prod.
 
-*Expected result*-Should be opened the course edit page with required fields Title, Price and Description 
 
-*Actual result*-Threes is no *Price* filed in Edit section of Qwallity application",,,,,,,,,,,,To Do,27/Jun/24 10:11 PM
-Description field config problem,KAN-110,10124,Bug,To Do,KAN,Qwallity,software,QWALLITY Manual,712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf,,Medium,,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,27/Jun/24 9:59 PM,27/Jun/24 10:07 PM,27/Jun/24 9:59 PM,,,0,Prod,,,Armine Melikyan,,637128983e79f12e571e8d29,,,,,,,,,,,,KAN-109,,,,,,,,,,,,,,,,,,Medium,,,Armine Melikyan,637128983e79f12e571e8d29,0|i000nn:,,,Medium,,"# Login Config. Data Prod.
 
-Email - [configurationdata@gmail.com|mailto:configurationdata@gmail.com]
-Pass - Configuration_0101 
 
-In Config. Data Prod. of Adding course required fields 
-""title"":true, change  ""true""
-""price"": *true*, change ""*false*""
-""description"": true change  ""true""
 
-Click *Save* on Config Data Prod
-and check that the functionality required * of the fields works
 
-*Description* field leave *empty* and
-Click Submit button on Qwallity app page
+Bug Report 
 
+ID number
+#2
+automatically getting in bug tracking system
+Bug Summary
+“Credit card” payment type is available on Qwallity app even after deletion it from Config. Data
+
+
+Reporter
+Armine Melikyan
+
+
+Submit Date
+25/04/2024
+
+
+Platform
+Web page
+
+
+Operating System
+Windows
+
+
+Browser
+Google Chrome
+
+
+Severity
+High
+
+
+Priority
+Medium
+
+
+Status
+
+
+automatically getting ‘Open’ in bug tracking system
+Assigned to 
+QA/Developer/BA
+
+
+Version
+Version 124.0.6367.60 (Official Build) (64-bit)
+
+
+Environment
+ dev, uat    
+
+
+Component/tag
+Reset
+
+
+Screenshot/video
+
+
+
+
+
+
+Precondition:
+1.Open Config application - https://www.npoint.io/
+
+2. Login with following credentials
+
+Email - configurationdata@gmail.com
+Pass - Configuration_0101
+
+3. Open Qwallity app prod.
+(Email - qwallitymanual16042024@gmail.com, Code- qwallity16042024# )
+
+4.Login as non admin user Qwallity prod
+
+            username: amelikyan
+            pass: arminemelikyan123
+
+https://qwallity-prod.onrender.com
+
+
+Steps to reproduce
+Step1 Open and read Config Data Prod Payment type -  ", "Credit Card"
+              Step2 In Config. Data Prod. Method section payment method delete "Credit card"     
+                       leaving only "Cash" and click Save
+               Step3  Open Qwallity app and click  user_action page     
+                           https://qwallity-prod.onrender.com  
+              Step4  Click on Payment type  drown down menu
+              Step5 Compare Config Data Prod. with Qwallity app Payment type       
+Expected result - In Payment type drop down menu should be "Cash" payment type
+
+Actual result -  In the Payment type drop down menu there are "Cash" and "Credit card" payment types. According to the Config Data Prod there should be "Cash" payment type only.                             
+
+
+
+
+
+
+
+
+
+
+Bug Report 
+
+ID number
+#3
+automatically getting in bug tracking system
+Bug Summary
+After changing gender config to "false"  The Gender field blinking only then disappeared 
+
+
+Reporter
+Armine Melikyan
+
+
+Submit Date
+25/04/2024
+
+
+Platform
+Web page
+
+
+Operating System
+Windows
+
+
+Browser
+Google Chrome
+
+
+Severity
+Medium
+
+
+Priority
+Medium
+
+
+Status
+
+
+automatically getting ‘Open’ in bug tracking system
+Assigned to 
+QA/Developer/BA
+
+
+Version
+Version 124.0.6367.60 (Official Build) (64-bit)
+
+
+Environment
+ dev, uat    
+
+
+Component/tag
+Reset
+
+
+Screenshot/video
+
+
+
+
+
+
+Precondition:
+1.Open Config application - https://www.npoint.io/
+
+2. Login with following credentials
+
+Email - configurationdata@gmail.com
+Pass - Configuration_0101
+
+3. Open Qwallity app prod.
+(Email - qwallitymanual16042024@gmail.com, Code- qwallity16042024# )
+
+4.Login as non admin user Qwallity prod
+
+            username: amelikyan
+            pass: arminemelikyan123
+
+https://qwallity-prod.onrender.com
+
+
+Steps to reproduce
+Step1 Open and read Config Data Prod Profile section -  "Gender", Mertial_statuse"
+Step2 In Config Data Prod. Profile section “Gender” - “true” change to “false” 
+            and Click Save
+Step3 Open Qwallity app https://qwallity-prod.onrender.com
+           and click  user_action page
+Step4 Compare Config Data Prod. with Qwallity app Profile
+ 
+Expected result - In Profile page after changing gender config to "false" the field should be disappeared
+Actual result - The Gender field blinking (appears a second) only then disappeared.
+
+
+
+
+
+Bug Report 
+
+ID number
+#4
+automatically getting in bug tracking system
+Bug Summary
+Instead of"Print receipt" button appears "Print receipt" link
+
+
+Reporter
+Armine Melikyan
+
+
+Submit Date
+25/07/2024
+
+
+Platform
+Web page
+
+
+Operating System
+Windows
+
+
+Browser
+Google Chrome
+
+
+Severity
+Medium
+
+
+Priority
+Medium
+Medium
+Status
+Medium
+automatically getting ‘Open’ in bug tracking system
+Assigned to 
+QA/Developer/BA
+
+
+Version
+Version 124.0.6367.60 (Official Build) (64-bit)
+
+
+Environment
+ dev, uat    
+
+
+Component/tag
+Reset
+
+
+Screenshot/video
+
+
+
+
+
+
+Precondition: 
+1.Open Config application - https://www.npoint.io/
+
+2. Login with following credentials
+
+Email - configurationdata@gmail.com
+Pass - Configuration_0101
+
+3. Open Qwallity app prod.
+(Email - qwallitymanual16042024@gmail.com, Code- qwallity16042024# )
+
+4.Login as non admin user Qwallity prod
+
+            username: amelikyan
+            pass: arminemelikyan123
+
+https://qwallity-prod.onrender.com
+
+
+Steps to reproduce
+Step1  1. Open and read  Config. Data Prod.
+
+              Step2. Receipt {
+              "print_receipt": false
+                 }
+                change to true and click Save
+             Step3 Open Qwallity application the current page https://qwallity-prod.onrender.com and   
+                         click user_action and look next to Checkout button
+Expected result - On Qwallity application on User_astion page, next to Checkout button should appear "Print receipt" button in orange
+
+Actual result - On Qwallity application on User_action page, next to Checkout button appears "Print receipt" link in orange.
+
+
+
+
+
+
+
+
+
+Bug Report 
+
+ID number
+#5
+automatically getting in bug tracking system
+Bug Summary
+The course is added on Qwallity app though the required field Description (according config Data) is empty
+
+
+
+
+Reporter
+Armine Melikyan
+
+
+Submit Date
+25/07/2024
+
+
+Platform
+Web page
+
+
+Operating System
+Windows
+
+
+Browser
+Google Chrome
+
+
+Severity
+Medium
+
+
+Priority
+Medium
+
+
+Status
+
+
+automatically getting ‘Open’ in bug tracking system
+Assigned to 
+QA/Developer/BA
+
+
+Version
+Version 124.0.6367.60 (Official Build) (64-bit)
+
+
+Environment
+ dev, uat    
+
+
+Component/tag
+Reset
+
+
+Screenshot/video
+
+
+
+
+
+
+Precondition:
+1.Open Config application - https://www.npoint.io/
+
+2. Login with following credentials
+
+Email - configurationdata@gmail.com
+Pass - Configuration_0101
+
+3. Open Qwallity app prod.
+(Email - qwallitymanual16042024@gmail.com, Code- qwallity16042024# )
+
+4.Login as admin user Qwallity prod
+
+            username: admin_user
+            pass: 11111111
+
+https://qwallity-prod.onrender.com
+
+Steps to reproduce
+Step1 In Config. Data Prod. of Adding course required fields
+"title":true, change "true"
+"price": true, change "false"
+"description": true change "true"
+           Step2 Click Save on Config Data Prod
+                     and check that the functionality required * of the fields whether works
+           Step3 Open Qwallity app https://qwallity-prod.onrender.com
+                     click on Adding course and fill the fields 
+           Step4 Description field leave empty and
+           Step5 Click Submit button on Qwallity app page
 TEST DATA
 title -Dance
 price- 11
 description-
 
-*Expected result*- The course *shouldn't* be *added* on Qwallity app.
-*Actual result*- The system *allows* to *add* course",,,,,,,,,,,,To Do,27/Jun/24 9:59 PM
-Adds course though Required field Description is empty ,KAN-109,10123,Bug,To Do,KAN,Qwallity,software,QWALLITY Manual,712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf,,Medium,,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,27/Jun/24 9:47 PM,27/Jun/24 9:59 PM,27/Jun/24 11:33 PM,,,0,Prod,,,Armine Melikyan,,637128983e79f12e571e8d29,,,,,,,,,,,,KAN-96,KAN-110,,,,,,,,,,,,,,,,,Medium,,,Armine Melikyan,637128983e79f12e571e8d29,0|i000nf:,,,Medium,,"# *Login* Config. Data Prod.
-
-Email - configurationdata@gmail.com
-Pass - Configuration_0101 
+Expected result- The course shouldn't be added on Qwallity app as the required field ( according config Data) is empty
+Actual result- The system allows to add course
 
 
-2. Open in Config. Data Prod. of *Adding* *course* section 
-""title"":true,
-""price"": true,
-""description"": true
-
-# Open Qwallity app prod log in as *Admin* user
-username: admin_user
-password: 11111111
-
-Click *Courses* *button*
-Check whether the *functionality* *required* (*) of the fields works
-
-Leave *Description* field *empty* and
-Click *Submit* button on Qwallity app page
-
-*TEST DATA*
-title -Communication skills
-price- 15
-description-
 
 
-*Expected result*-The course shouldn't be added on Qwallity app
-*Actual result*-The system allows to add course, though the required field Description  is empty",,,,,,,,,,,,To Do,27/Jun/24 9:47 PM
-"Gender field blinking appearance after Config change ""false"" ",KAN-108,10122,Bug,To Do,KAN,Qwallity,software,QWALLITY Manual,712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf,,Medium,,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,27/Jun/24 5:23 PM,27/Jun/24 7:21 PM,27/Jun/24 7:40 PM,,,0,Prod,,,Armine Melikyan,,637128983e79f12e571e8d29,,,,,,,,,,,,KAN-96,,,,,,,,,,,,,,,,,,Medium,,,Armine Melikyan,637128983e79f12e571e8d29,0|i000n7:,,,Medium,,"1. Open, log in and read Config Data Prod *Profile* section -  ""Gender"", Mertial_statuse""
+
+
+
+
+
+Bug Report 
+
+ID number
+#6
+automatically getting in bug tracking system
+Bug Summary
+Price field is absence on Edit field though in Config Data is put “true”
+
+
+Reporter
+Armine Melikyan
+
+
+Submit Date
+25/07/2024
+
+
+Platform
+Web page
+
+
+Operating System
+Windows
+
+
+Browser
+Google Chrome
+
+
+Severity
+Medium
+
+
+Priority
+Medium
+
+
+Status
+
+
+automatically getting ‘Open’ in bug tracking system
+Assigned to 
+QA/Developer/BA
+
+
+Version
+Version 124.0.6367.60 (Official Build) (64-bit)
+
+
+Environment
+ dev, uat    
+
+
+Component/tag
+Reset
+
+
+Screenshot/video
+
+
+
+
+
+
+Precondition:
+1.Open Config application - https://www.npoint.io/
+
+2. Login with following credentials
 
 Email - configurationdata@gmail.com
 Pass - Configuration_0101
 
-2.In Config Data Prod. Profile section “*Gender*” - “*true*” change to “*false*”
+3. Open Qwallity app prod.
+(Email - qwallitymanual16042024@gmail.com, Code- qwallity16042024# )
 
-Click *Save*
+4.Login as admin user Qwallity prod
 
-3. Open Qwallity app *user_action* page  [https://qwallity-prod.onrender.com/user_action|https://qwallity-prod.onrender.com/user_action]
+            username: admin_user
+            pass: 11111111
 
-and loge in as **non* *admin user
-
-4.Compare Config Data Prod. with Qwallity app Payment type 
-
+https://qwallity-prod.onrender.com
 
 
-*Expected result* - In Profile page after changing *gender* config to ""*false*"" the field should be *disappeared*
-*Actually result* - The Gender field *blinking* (*appears* a *second*) only then disappeared",,,,,,,,,,,,To Do,27/Jun/24 5:23 PM
-"Payment type configuration issue ""credit card""",KAN-107,10121,Bug,To Do,KAN,Qwallity,software,QWALLITY Manual,712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf,,Medium,,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,27/Jun/24 5:08 PM,27/Jun/24 7:12 PM,27/Jun/24 7:21 PM,,,0,Prod,,,Armine Melikyan,,637128983e79f12e571e8d29,,,,,,,,,,,,KAN-96,,,,,,,,,,,,,,,,,,Medium,,,Armine Melikyan,637128983e79f12e571e8d29,0|i000mz:,,,Medium,,"1. Open, log in and read Config Data Prod Payment type -  "", ""Credit Card""
+Steps to reproduce
+Step1 Open and read Config. Data Prod.
+            "title":true,
+            "price": true,
+            "description": true
+           Step2 Check the functionality of Config on Qwallity app on Edit section
+           Step3 Open Qwallity app prod https://qwallity-prod.onrender.com
+           Step4 On Qwallity app click on Courses button
+           Step5 Select Advanced courses
+           Step6 From opened list click on "Cours_adv_4"
+           Step7 Click on Edit button
+
+Expected result-Should be opened the course edit page with required fields Title, Price   
+                             and Description
+Actual result-Threes is no Price field in Edit section of Qwallity application
+
+
+
+
+
+
+
+
+Bug Report 
+
+ID number
+#7
+automatically getting in bug tracking system
+Bug Summary
+The system allows to submit edited  course with empty Title and Description fields
+
+
+Reporter
+Armine Melikyan
+
+
+Submit Date
+25/07/2024
+
+
+Platform
+Web page
+
+
+Operating System
+Windows
+
+
+Browser
+Google Chrome
+
+
+Severity
+Medium
+
+
+Priority
+Medium
+
+
+Status
+
+
+automatically getting ‘Open’ in bug tracking system
+Assigned to 
+QA/Developer/BA
+
+
+Version
+Version 124.0.6367.60 (Official Build) (64-bit)
+
+
+Environment
+ dev, uat    
+
+
+Component/tag
+Reset
+
+
+Screenshot/video
+
+
+
+
+
+
+Precondition:
+1.Open Config application - https://www.npoint.io/
+
+2. Login with following credentials
 
 Email - configurationdata@gmail.com
 Pass - Configuration_0101
 
-2. Open Qwallity app user_action page  [https://qwallity-prod.onrender.com/user_action|https://qwallity-prod.onrender.com/user_action]
+3. Open Qwallity app prod.
+(Email - qwallitymanual16042024@gmail.com, Code- qwallity16042024# )
 
-and loge in as *non* admin user
+4.Login as admin user Qwallity prod
 
-3.Compare Config Data Prod. with Qwallity app Payment type 
+            username: admin_user
+            pass: 11111111
 
-*Expected result* - In Payment type drop down menu should be ""*Credit card""* payment type
+https://qwallity-prod.onrender.com
 
+Steps to reproduce
+Step1 In Config. Data Prod. of Adding course required fields
+         “title":true, change "true"
+         "price": true, change "false"
+         "description": true change "true"
+            Step2 Click Save on Config Data Prod
+                      and check that the functionality required * of the fields works
+           Step3 Open Qwallity app prod https://qwallity-prod.onrender.com
+           Step4 Click on Courses
+           Step5 Select Advanced courses
+           Step6 From opened list click on "Cours_adv_4"
+           Step7 Click Edit
+           Step8 Title and Description fields leave empty 
+           Step9 Click on Submit button
 
-*Actually result* -  In Payment type drop down menu there are ""*Cash*"" and ""*Credit card""* payment type
-                             according to the Config Data Prod there shouldn't be ""Cash"" payment type as it is *not* 
-                             *mentioned* in Config Data Prod.",,,,,,,,,,,,To Do,27/Jun/24 5:08 PM
-"Configuration on changing ""credit card"" to  ""cash"" ",KAN-106,10120,Bug,To Do,KAN,Qwallity,software,QWALLITY Manual,712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf,,Medium,,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,27/Jun/24 4:41 PM,27/Jun/24 7:14 PM,27/Jun/24 7:22 PM,,,0,Prod,,,Armine Melikyan,,637128983e79f12e571e8d29,,,,,,,,,,,,KAN-96,,,,,,,,,,,,,,,,,,Medium,,,Armine Melikyan,637128983e79f12e571e8d29,0|i000mr:,,,Medium,,"1. Open, log in and read Config Data Prod Payment type -  "", Credit Card""
+title-Cours_adv_4
+price- 12
+description-test course for workshop_tem2222
 
-Email - configurationdata@gmail.com
-Pass - Configuration_0101
+Expected result-On Qwallity app price field shouldn't be required *  The course edit 
+                            shouldn't be Submitted
 
-2.In Config Data Prod *Payment type* section add “*Cash*” 
-
-3.and *delete* “Credit Card”
-
-4.Click *Save* 
-
-5. Open Qwallity app **user_action* *page via *link*
-
-[https://qwallity-prod.onrender.com/user_action|https://qwallity-prod.onrender.com/user_action]
-
-and loge in as *non* admin user
-
-6. Click *Payment type* drop down menu to see the type
-7. Config Data **Payment type* *Compare with *Qwallity* *app* Payment type 
-
-
-
-*Expected result* - In Payment type drop down menu should be ""*Cash""* payment type only
-
-
-*Actually result* -   In Payment type drop down menu there are ""*Cash*"" and ""*Credit* *card*"" payment type according to the 
-
-                               Config Data Prod there shouldn't be ""Credit card"" payment type as it was deleted in Config Data Prod but 
-
-                                config doesn’t affect on Qwallity app Payment type section.",,,,,,,,,,,,To Do,27/Jun/24 4:41 PM
-"""Print Receipt"" appears as link not Button",KAN-99,10112,Bug,To Do,KAN,Qwallity,software,QWALLITY Manual,712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf,,Medium,,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,24/Jun/24 3:04 PM,27/Jun/24 8:04 PM,27/Jun/24 11:33 PM,,,0,Prod,,,Armine Melikyan,QWALLITY Manual,637128983e79f12e571e8d29,712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,Armine Melikyan,637128983e79f12e571e8d29,0|i000l7:,,,Medium,,"1. Open and log in  Config. Data Prod. 
-
-{{Email - configurationdata@gmail.com}}
-{{Pass - Configuration_0101}}
-2. Receipt  {
-""print_receipt"": false
-}
- change to *true*
-3. Open Qwallity application the *current* page [https://qwallity-prod.onrender.com/user_action|https://qwallity-prod.onrender.com/user_action]
-and log in as *non* *admin* user
-
-*Expected result* - On Qwallity application on *User_astion* page, next to Checkout button should appear ""*Print* *receipt*"" *button* in orange
-*Actual result* - On Qwallity application on *User_astion* page, next to Checkout button should appear ""*Print* *receipt*"" *link* in orange.",,,,,,,,,2024-06-24 20:09:15.5,,25/Jun/24 12:09 AM;712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf;[~accountid:637128983e79f12e571e8d29]  the same issues as in pervious bug,To Do,24/Jun/24 3:04 PM
-"Payment type configuration issue ""credit card""",KAN-98,10111,Bug,To Do,KAN,Qwallity,software,QWALLITY Manual,712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf,,Medium,,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,Armine Melikyan,637128983e79f12e571e8d29,24/Jun/24 2:47 PM,27/Jun/24 5:06 PM,27/Jun/24 11:25 PM,,,0,Prod,,,Armine Melikyan,QWALLITY Manual,637128983e79f12e571e8d29,712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Medium,,,Armine Melikyan,637128983e79f12e571e8d29,0|i000kz:,,,Medium,,"1. Open, log in and read Config Data Prod Payment type -  "", ""Credit Card""
-
-{{Email - configurationdata@gmail.com}}
-{{Pass - Configuration_0101}}
-
-2. Open Qwallity app *user_action* page  [https://qwallity-prod.onrender.com/user_action|https://qwallity-prod.onrender.com/user_action]
-
-   and loge in as non admin user
-
-3.Compare Config Data Prod. with Qwallity app Payment type 
-
-*Expected result* - In Payment type drop down menu should be *""Credit card""* payment type
-*Actually result* -  In Payment type drop down menu there are *""Cash""* and *""Credit card""* payment type
-according to the Config Data Prod there shouldn't be ""Cash"" payment type as it is not 
-mentioned.",,,,,,,,,2024-06-24 20:07:12.814,,25/Jun/24 12:07 AM;712020:847f1acb-8f8c-41ea-a2bc-4e83870031bf;[~accountid:637128983e79f12e571e8d29]  please see notes on the title and bug body,To Do,24/Jun/24 2:47 PM
+Actual result- The system allows to submit edited  course with empty Title and 
+                        Description fields
