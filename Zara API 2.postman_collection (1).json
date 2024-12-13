@@ -1,0 +1,745 @@
+{
+	"info": {
+		"_postman_id": "894939de-822d-4cb8-85e2-0fd4ee89be50",
+		"name": "Zara API 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36152641"
+	},
+	"item": [
+		{
+			"name": "login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"var res = JSON.parse(responseBody);\r",
+							"{\r",
+							"pm.environment.set(\"token\", res.token);\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Zara",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://qwallity-{{env}}.onrender.com/login/api",
+					"protocol": "https",
+					"host": [
+						"qwallity-{{env}}",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"login",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\"pm.test(\\\"Status code is 200\\\", function () {\\r\",\r",
+							"\"    pm.response.to.have.status(200);\\r\",\r",
+							"\"});\""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\"first_name\": \"Armine\",\r\n\"email\": \"fdncjden.djhn\",\r\n\"username\": \"arm235\",\r\n\"password\": \"1234567\",\r\n\"role_id\": 2,\r\n\"account\": 100\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qwallity-{{env}}.onrender.com/register/api",
+					"protocol": "https",
+					"host": [
+						"qwallity-{{env}}",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"register",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "advanced",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\"pm.test(\\\"Status code is 200\\\", function () {\\r\",\r",
+							"\"    pm.response.to.have.status(200);\\r\",\r",
+							"\"});\""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qwallity-dev.onrender.com/courses/advanced/api",
+					"protocol": "https",
+					"host": [
+						"qwallity-dev",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"courses",
+						"advanced",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fundamental",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\"pm.test(\\\"Status code is 200\\\", function () {\\r\",\r",
+							"\"    pm.response.to.have.status(200);\\r\",\r",
+							"\"});\""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qwallity-{{env}}.onrender.com/courses/fundamental/api",
+					"protocol": "https",
+					"host": [
+						"qwallity-{{env}}",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"courses",
+						"fundamental",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add course",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\"pm.test(\\\"Status code is 200\\\", function () {\\r\",\r",
+							"\"    pm.response.to.have.status(200);\\r\",\r",
+							"\"});\""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluX3VzZXIiLCJpZCI6NTU1NTU3NDQsInJvbGUiOjEsImV4cCI6MTcxNzc4MzkyOH0._N_lG31WB_t6KyGH3SeiAjcRN7UZcoDg_6BxtkeB4Gc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"api2\",\r\n  \"body\": \"mhbhbjh\",\r\n  \"coursetype\": \"2\",\r\n  \"author\": \"Zara\",\r\n  \"price\": 200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qwallity-{{env}}.onrender.com/add_course/api",
+					"protocol": "https",
+					"host": [
+						"qwallity-{{env}}",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"add_course",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update course",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\"pm.test(\\\"Status code is 200\\\", function () {\\r\",\r",
+							"\"    pm.response.to.have.status(200);\\r\",\r",
+							"\"});\""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Olya\",\r\n  \"body\": \"Zara\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qwallity-{{env}}.onrender.com/course/9001826/update/",
+					"protocol": "https",
+					"host": [
+						"qwallity-{{env}}",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"course",
+						"9001826",
+						"update",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account balance",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\"pm.test(\\\"Status code is 200\\\", function () {\\r\",\r",
+							"\"    pm.response.to.have.status(200);\\r\",\r",
+							"\"});\""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qwallity-{{env}}.onrender.com/balance/balance_api/",
+					"protocol": "https",
+					"host": [
+						"qwallity-{{env}}",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"balance",
+						"balance_api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buy course",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\"pm.test(\\\"Status code is 200\\\", function () {\\r\",\r",
+							"\"    pm.response.to.have.status(200);\\r\",\r",
+							"\"});\""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://qwallity-{{env}}.onrender.com/buy_course/api/9001826/Zara",
+					"protocol": "https",
+					"host": [
+						"qwallity-{{env}}",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"buy_course",
+						"api",
+						"9001826",
+						"Zara"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add $$",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\"pm.test(\\\"Status code is 200\\\", function () {\\r\",\r",
+							"\"    pm.response.to.have.status(200);\\r\",\r",
+							"\"});\""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amount\": 100,\r\n  \"payment\": \"2\",\r\n  \"card_num\": 52065,\r\n  \"exp_date\": \"2026/05/15\",\r\n  \"card_cvv\": \"444\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qwallity-{{env}}.onrender.com/add_account_balance/payment_api",
+					"protocol": "https",
+					"host": [
+						"qwallity-{{env}}",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"add_account_balance",
+						"payment_api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user course",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\"pm.test(\\\"Status code is 200\\\", function () {\\r\",\r",
+							"\"    pm.response.to.have.status(200);\\r\",\r",
+							"\"});\""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qwallity-{{env}}.onrender.com/usercourses/api/55555748",
+					"protocol": "https",
+					"host": [
+						"qwallity-{{env}}",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"usercourses",
+						"api",
+						"55555748"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course price id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\"pm.test(\\\"Status code is 200\\\", function () {\\r\",\r",
+							"\"    pm.response.to.have.status(200);\\r\",\r",
+							"\"});\""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://qwallity-{{env}}.onrender.com/course_price/api/55555748",
+					"protocol": "https",
+					"host": [
+						"qwallity-{{env}}",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"course_price",
+						"api",
+						"55555748"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user role",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\"pm.test(\\\"Status code is 200\\\", function () {\\r\",\r",
+							"\"    pm.response.to.have.status(200);\\r\",\r",
+							"\"});\""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"role_id\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qwallity-dev.onrender.com/user_role/Zara",
+					"protocol": "https",
+					"host": [
+						"qwallity-dev",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"user_role",
+						"Zara"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "role id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\"pm.test(\\\"Status code is 200\\\", function () {\\r\",\r",
+							"\"    pm.response.to.have.status(200);\\r\",\r",
+							"\"});\""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qwallity-{{env}}.onrender.com/get_user_role/Zara",
+					"protocol": "https",
+					"host": [
+						"qwallity-{{env}}",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"get_user_role",
+						"Zara"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set discount",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\"pm.test(\\\"Status code is 200\\\", function () {\\r\",\r",
+							"\"    pm.response.to.have.status(200);\\r\",\r",
+							"\"});\""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"course_type\": \"fundamental\",\r\n  \"discount\": 10,\r\n  \"course_count\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qwallity-{{env}}.onrender.com/set_discount/api",
+					"protocol": "https",
+					"host": [
+						"qwallity-{{env}}",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"set_discount",
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlphcmEiLCJpZCI6NTU1NTU3NDgsInJvbGUiOjEsImV4cCI6MTcxODA0NzkwNH0.5a1byw0B879PfY2N2LmbGbztTZf6GvFoFmIJA6gUK78",
+			"type": "string"
+		}
+	]
+}
